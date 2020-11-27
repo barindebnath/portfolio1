@@ -10,7 +10,7 @@ export const Experience = () => {
           <Title title="Frontend Developer" />
           <hr />
           <Line small="Company" big="Puspendu Studio" />
-          <Line small="From - To" big="Sep 2019 - Present" />
+          <Line small="From - To" big="Sep 2019 - Sep 2020" />
           <Line small="Location" big="Nashik, Maharashtra, India" />
           <Line small="Technology" big="CSS3, Bootstrap4, JavaScript, jQuery" />
         </div>

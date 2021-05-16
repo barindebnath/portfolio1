@@ -1,20 +1,18 @@
 import React from "react";
-import { Title } from "./CardTitle";
-import { Line } from "./CardLine";
-//import Py from "./img/py.png";
+import { Title, Line } from "./CardText";
 
-export const Skill = () => {
+const Skill = () => {
   return (
     <>
-      <div className="cW350 card mx-2 d-inline-block rounded-lg">
-        <div className="card-body rounded-lg">
-          <Title title="Programming Languages" />
+      <div className='cW350 card mx-2 d-inline-block rounded-lg'>
+        <div className='card-body rounded-lg'>
+          <Title title='Programming Languages' />
           <hr />
-          <Line small="React Framework" big="React Native" />
-          <Line small="JavaScript  Library" big="React" />
-          <Line small="Language" big="JavaScript" />
+          <Line small='JavaScript  Library' big='React' />
+          <Line small='Language' big='JavaScript' />
+          <Line small='State Management Tool' big='Redux' />
         </div>
-        <i className="fab fa-react card-img-top fa-5x" style={{ color: "#61DBFB" }}></i>
+        <i className='fab fa-react card-img-top fa-5x' style={{ color: "#61DBFB" }}></i>
       </div>
       {/* <div className="cW350 card mx-2 d-inline-block rounded-lg">
         <div className="card-body rounded-lg">
@@ -57,3 +55,5 @@ export const Skill = () => {
     </>
   );
 };
+
+export default Skill;

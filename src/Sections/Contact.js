@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Title } from "./CardTitle";
+import { Title } from "./CardText";
 import emailjs from "emailjs-com";
 require("dotenv").config();
 
@@ -41,18 +41,40 @@ export const Contact = () => {
     setEmail({ name: "", msg: "", id: "" });
   };
   return (
-    <div className="cW400 card mx-2 d-inline-block rounded-lg">
-      <div className="card-body rounded-lg">
-        <form onSubmit={(e) => handleContact(e)} id="form">
-          <Title title="Contact me" />
+    <div className='cW400 card mx-2 d-inline-block rounded-lg'>
+      <div className='card-body rounded-lg'>
+        <form onSubmit={(e) => handleContact(e)} id='form'>
+          <Title title='Contact me' />
           <hr />
-          <label className="text-dark">Name</label>
-          <input name="name" id="ip_nm" className="form-control form-control-sm mb-3" onChange={handleEmail} type="text" required />
-          <label className="text-dark">Email</label>
-          <input name="id" id="ip_id" className="form-control form-control-sm mb-3" onChange={handleEmail} type="email" required />
-          <label className="text-dark">Message</label>
-          <textarea name="msg" id="ip_mg" className="form-control form-control-sm mb-4" rows="3" onChange={handleEmail} type="text" required />
-          <button className="btn btn-sm btn-primary btn-block" type="submit">
+          <label className='text-dark'>Name</label>
+          <input
+            name='name'
+            id='ip_nm'
+            className='form-control form-control-sm mb-3'
+            onChange={handleEmail}
+            type='text'
+            required
+          />
+          <label className='text-dark'>Email</label>
+          <input
+            name='id'
+            id='ip_id'
+            className='form-control form-control-sm mb-3'
+            onChange={handleEmail}
+            type='email'
+            required
+          />
+          <label className='text-dark'>Message</label>
+          <textarea
+            name='msg'
+            id='ip_mg'
+            className='form-control form-control-sm mb-4'
+            rows='3'
+            onChange={handleEmail}
+            type='text'
+            required
+          />
+          <button className='btn btn-sm btn-primary btn-block' type='submit'>
             {btn}
           </button>
         </form>

@@ -1,12 +1,11 @@
 import React from "react";
-import Ps from "./img/prostoker.PNG";
-import Wt2 from "./img/wtsppu2.PNG";
-import Wt from "./img/wtsppu.PNG";
-import Scoe from "./img/scoe.PNG";
-import { Title } from "./CardTitle";
-import { Line } from "./CardLine";
+import Ps from "../img/prostoker.PNG";
+import Wt2 from "../img/wtsppu2.jpg";
+import Wt from "../img/wtsppu.PNG";
+import Scoe from "../img/scoe.PNG";
+import { Title, Line } from "./CardText";
 
-export const Project = () => {
+const Project = () => {
   const aob = [
     {
       href: "http://scenashik.org/",
@@ -23,14 +22,14 @@ export const Project = () => {
       big: "Aug 2019 - April 2020",
     },
     {
-      href: "http://wtsppu.epizy.com/",
+      href: "https://barindebnath.github.io/wt2/",
       src: Wt2,
       alt: "wtsppu2",
       title: "Web Technology 2.0",
       big: "Jan 2019 - Feb 2019",
     },
     {
-      href: "http://wtsppu.epizy.com/1.0/",
+      href: "https://barindebnath.github.io/wt1/",
       src: Wt,
       alt: "wtsppu",
       title: "Web Technology",
@@ -39,11 +38,11 @@ export const Project = () => {
   ];
   return (
     <>
-      {aob.map((item, i) => (
-        <a href={item.href} target="_blank" rel="noopener noreferrer" key={i}>
-          <div className="card mx-2 d-inline-block rounded-lg prj">
-            <img className="img-fluid rounded-top img-prj border-bottom" src={item.src} alt={item.alt} />
-            <div className="card-body rounded-lg">
+      {aob.map((item) => (
+        <a href={item.href} target='_blank' rel='noopener noreferrer' key={item.href}>
+          <div className='card mx-2 d-inline-block rounded-lg prj'>
+            <img className='img-fluid rounded-top img-prj border-bottom' src={item.src} alt={item.alt} />
+            <div className='card-body rounded-lg'>
               <Title title={item.title} />
               <Line big={item.big} />
             </div>
@@ -53,3 +52,5 @@ export const Project = () => {
     </>
   );
 };
+
+export default Project;

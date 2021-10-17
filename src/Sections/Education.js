@@ -9,7 +9,7 @@ const Education = () => {
     <>
       <CardEdu
         title='Bachelor of Engineering'
-        univ='Savitribai Phule Pune Univercity'
+        univ='Savitribai Phule Pune University'
         year='2017-2020'
         unitMrk='CGPA'
         marks='6.96'

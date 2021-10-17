@@ -7,7 +7,7 @@ const CardEdu = (props) => {
       <div className='card-body rounded-lg'>
         <Title title={props.title} />
         <hr />
-        <Line small='Univercity' big={props.univ} />
+        <Line small='University' big={props.univ} />
         <Line small='Year' big={props.year} />
         <Line small={props.unitMrk} big={props.marks} />
         <Line small={props.clgSch} big={props.clg} />

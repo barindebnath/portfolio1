@@ -1,7 +1,6 @@
 import React from "react";
 import { Contact } from "./Contact";
 import { Title, Line } from "./CardText";
-import Resume from "../Resume.pdf";
 
 const About = () => {
   return (

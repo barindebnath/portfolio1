@@ -13,15 +13,7 @@ const About = () => {
           <Line small='Name' big='Barin Debnath' />
           <Line small='Email' big='barindebnath@gmail.com' />
           <Line small='Location' big='Nashik, Maharashtra, India' />
-          <a
-            href={Resume}
-            target='_blank'
-            rel='noopener noreferrer'
-            role='button'
-            className='btn btn-sm btn-block btn-outline-dark mb-3'
-          >
-            <i className='fas fa-file-download'></i> Download Resume
-          </a>
+          <div style='height: 47px;'></div>
           <Title title='Connect' />
           <a
             href='https://in.linkedin.com/in/barin-d'
